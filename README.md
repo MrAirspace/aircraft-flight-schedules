@@ -1,4 +1,4 @@
 # airport-towerlogs
 Empty for now
 
-Ref to ppt portfolio
+Add 1 release every IATA season?
