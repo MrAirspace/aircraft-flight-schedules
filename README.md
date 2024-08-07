@@ -13,9 +13,13 @@ If you require specfic data or analyses, please contact me.
 
 Validation: given the fact that ADSBlol coverage improves regularly, validation is a never finished task, especially for airports/flights all over the world.
 So far, AMS/EHAM flights have been analysed and results:
+
 Number of flights extracted from ADSB data vs # flights from real AMS schedule (reference day 2024-06-14) --> significantly close, within 5% error marging
+
 Number of KLM flights 99.5% included in dataset on respective day
+
 Destination/origin of a flight inaccurate 27% of time, to be updated.
+
 
 Image stations incl data/status
 Image flights incl data/status (time roughly chosen to have reasonable ops in all continetns - no midnight situation in major markets)
