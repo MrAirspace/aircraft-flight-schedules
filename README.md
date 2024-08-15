@@ -3,8 +3,6 @@ High-level flights per aircraft - wip
 
 All airports of the world, as long as within coverage of the ADSBlol initiative
 
-But publish here as aircraft flights, not airport logs
-
 Can you link this to source github page?
 
 If you require specfic data or analyses, please contact me.
