@@ -22,6 +22,8 @@ Number of KLM flights 99.5% included in dataset on respective day
 
 Destination/origin of a flight inaccurate 27% of time, to be updated.
 
+Data includes first and last coordinates points, so if desired you can assign the most likely RWY
+
 Status Q2 2024:
 ![image](https://github.com/user-attachments/assets/92117619-ecc2-48f3-bc73-07407cca4445)
 ![image](https://github.com/user-attachments/assets/b96a126c-00aa-4076-9882-f5a84669eb13)
