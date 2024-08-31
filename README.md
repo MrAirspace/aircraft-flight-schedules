@@ -1,5 +1,8 @@
 # Aircraft Flight Logs (aircraft-flight-logs)
-**_High-level_** flights per aircraft - wip
+
+WORK IN PROGRESS
+
+**_High-level_** flights per aircraft. ...
 
 All airports of the world, as long as within coverage of the ADSBlol initiative
 
