@@ -35,3 +35,5 @@ Status Q2 2024:
 (time roughly chosen to have reasonable ops in all continents - no midnight situation in major markets)
 
 Please use in line with license defined in this repository. No guarantee, liability, warranty
+
+Note the database contains flights per aircraft (per season). If you want to extract historic flights to/from a certain airport, you need to extract those from all a/c files - based on your airport in the origin/destination. If you need support with this, please get in touch.
