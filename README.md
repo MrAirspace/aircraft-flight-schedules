@@ -20,8 +20,12 @@ See releases for a tar/zip file with the flights per aircraft, per season
 Can you link this to source github page?
 
 
+# Data Enrichment
+Given potentially limited ADSB-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route database of Andrew Whewell (https://github.com/vradarserver/standing-data/tree/main/routes/schema-01). Kindly note the departure/arrival times have not been updated accordingly in the basic dataset provided here.
+
+
 # Detailed Data and Support
-If you require specfic data or analyses, please contact me.
+If you require specfic data or analyses, please contact me. More detailed datasets available upon request include updated departure/arrival times for those cases where the aircraft track was not complete (1), as well as advanced passenger estimates per flight (2) taking into consideration the type of flight, time of day, etc.
 
 
 # Validation
