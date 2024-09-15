@@ -2,17 +2,12 @@
 
 WORK IN PROGRESS
 
-**_High-level_** flights per aircraft. ...
+**_High-level_** flights per aircraft, extracted from ADS-B position reports of the ADSBlol initiative (https://github.com/adsblol).
+Published per quarter of a year, starting from 2024 onwards. Covers all flights globally, as long as within coverage of the ADSBlol initiative.
 
-All airports of the world, as long as within coverage of the ADSBlol initiative (https://github.com/adsblol)
-
-Note the database contains flights per aircraft (per season). If you want to extract historic flights to/from a certain airport, you need to extract those from all a/c files - based on your airport in the origin/destination. If you need support with this, please get in touch. I can also offer enhanced databases which also feature RWY used per flight, etc.
+Since the datasets contain flights per aircraft (per season), if you want to extract historic flights to/from a certain airport, you need to extract those from all aircraft flight files - based on your airport listed in the aircraft its origin/destination. If you need support with this, please get in touch. I can also offer enhanced datasets.
 
 ![image](https://github.com/user-attachments/assets/daa94716-cab0-4d94-beed-233c0b44c4a6)
-
-In case of go-arounds/touch-and-go/balked landing, only the final touchdown is counted as touchdown time (with only commercial flights in mind):
-
-![image](https://github.com/user-attachments/assets/96de9c02-a204-4d1e-8198-3cb0069e93e2)
 
 
 # Where to Get the Data?
@@ -25,10 +20,14 @@ Given potentially limited ADSB-B reception coverage of the ADSBlol initiative in
 
 
 # Detailed Data and Support
-If you require specfic data or analyses, please contact me. More detailed datasets available upon request include updated departure/arrival times for those cases where the aircraft track was not complete (1), as well as advanced passenger estimates per flight (2) taking into consideration the type of flight, time of day, etc.
+If you require specfic data or analyses, please contact me. More detailed datasets available upon request include updated departure/arrival times for those cases where the aircraft track was not complete (1), in/off-block instead of RWY times (2), used RWY per flight (3), among other data. Furthermore, advanced passenger estimates per flight (4) taking into consideration the type of flight, time of day, etc can be provided upon request.
 
 
-# Validation
+# Validation - Diverse
+In case of go-arounds/touch-and-go/balked landing, only the final touchdown is counted as touchdown time (with only commercial flights in mind):
+
+![image](https://github.com/user-attachments/assets/96de9c02-a204-4d1e-8198-3cb0069e93e2)
+
 Given the fact that ADSBlol coverage improves regularly, validation is a never finished task, especially for airports/flights all over the world.
 So far, AMS/EHAM flights have been analysed and results:
 
