@@ -1,6 +1,6 @@
 # Aircraft Flight Logs (aircraft-flight-logs)
 
-WORK IN PROGRESS
+WORK IN PROGRESS - Update expected by the end of October 2024
 
 **_High-level_** flights per aircraft, extracted from ADS-B position reports of the ADSBlol initiative (https://github.com/adsblol).
 Published per quarter of a year, starting from 2024 onwards. Covers all flights globally, as long as within coverage of the ADSBlol initiative.
