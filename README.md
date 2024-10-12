@@ -19,6 +19,10 @@ Can you link this to source github page?
 Given potentially limited ADSB-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route database of Andrew Whewell (https://github.com/vradarserver/standing-data/tree/main/routes/schema-01). Kindly note the departure/arrival times have not been updated accordingly in the basic dataset provided here.
 
 
+# Data Timeframes
+The data is published per quarter of a year. The quarters feature some overlap to ensure no flights are incomplete (cut in half).
+
+
 # Detailed Data and Support
 If you require specfic data or analyses, please contact me. More detailed datasets available upon request include updated departure/arrival times for those cases where the aircraft track was not complete (1), in/off-block instead of RWY times (2), used RWY per flight (3), among other data. Furthermore, advanced passenger estimates per flight (4) taking into consideration the type of flight, time of day, etc can be provided upon request.
 
