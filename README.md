@@ -62,11 +62,15 @@ AMS/EHAM reference day 2024-06-14
 - Destination/origin of a flight accurate 73% of time purely based on ADS-B track data, improved to 95+% by using callsign vs route lookup
 
 
+# License
+Please use in line with license defined in this repository. No guarantee, liability, warranty. All open-source. Free to use.
+
+
+# Details - What are the Date/Times in the Datasets?
+This concerns RWY times, so lift-off time for departures and touchdown times for arrivals.
+
+
 # Details - How are Go-Arounds Considered?
 In case of go-arounds/touch-and-go/balked landings, only the final touchdown is counted as touchdown time of the flight (with commercial flights in mind)
 
 ![image](https://github.com/user-attachments/assets/96de9c02-a204-4d1e-8198-3cb0069e93e2)
-
-
-# License
-Please use in line with license defined in this repository. No guarantee, liability, warranty. But free to use.
