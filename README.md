@@ -42,10 +42,10 @@ Je kan wel een sponsor me optie doen?
 # Data Coverage
 _Status Q2 2024_
 ![image](https://github.com/user-attachments/assets/92117619-ecc2-48f3-bc73-07407cca4445)
-Number of receivers/antennas of ADSBlol initiative (above)
+Number of receivers/antennas of ADSBlol initiative (image above)
 
 ![image](https://github.com/user-attachments/assets/b96a126c-00aa-4076-9882-f5a84669eb13)
-Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonable ops in all continents - no midnight situation in major markets (above)
+Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonable ops in all continents - no midnight situation in major markets (image above)
 
 
 # Flights Extracts - Validation Case Study
