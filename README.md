@@ -73,7 +73,7 @@ This concerns RWY times, so lift-off time for departures and touchdown time for 
 
 
 # Details - Why are There 2 Airports Listed Even Though Track Started/Ended on 'Ground' Flight Level?
-... SDU etc example --> airport reference point vs RWYs ...
+... SDU example --> aerodrome reference point vs coordinates of track are at RWY, not ARP ... to account for this when assigning an airport ...
 
 
 # Details - How are Go-Arounds Considered?
