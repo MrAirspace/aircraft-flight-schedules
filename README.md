@@ -73,7 +73,7 @@ This concerns RWY times, so lift-off time for departures and touchdown time for 
 
 
 # Details - Why are There 2 Airports Listed Even Though Track Started/Ended on 'Ground' Flight Level?
-... GIG etc example --> airport reference point vs RWYs ...
+... SDU etc example --> airport reference point vs RWYs ...
 
 
 # Details - How are Go-Arounds Considered?
