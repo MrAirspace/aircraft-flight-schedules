@@ -30,13 +30,7 @@ Since the datasets contain flights per aircraft (per quarter of a year), if you 
 
 
 # Detailed Data and Support
-If you require specfic data or analyses, please contact me. More detailed datasets available upon request include updated departure/arrival times for those cases where the aircraft track was not complete (1), in/off-block instead of RWY times (2), used RWY per flight (3), among other data. Furthermore, advanced passenger estimates per flight (4) taking into consideration the type of flight, time of day, etc can be provided upon request.
-
-Data includes first and last coordinates points, so if desired you can assign the most likely RWY --> image?
-
-www.ddfsgenerator.com
-Dit wellicht nog even  niet
-Je kan wel een sponsor me optie doen?
+If you require specfic data or analyses, you can contact me, details in my github profile. More detailed datasets available upon request include updated departure/arrival times for those cases where the aircraft track was not complete (1), on/off-block instead of RWY times (2), used RWY per flight (3), among other data. Furthermore, advanced passenger estimates per flight (4) taking into consideration the type of flight, time of day, etc can be provided upon request.
 
 
 # Data Coverage
