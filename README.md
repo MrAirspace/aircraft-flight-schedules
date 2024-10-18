@@ -65,7 +65,7 @@ In case of data inaccuracies, please use the 'issues' tab of this repository.
 
 
 # Details - What are the Date/Times in the Datasets?
-This concerns RWY times, so lift-off time for departures and touchdown times for arrivals.
+This concerns RWY times, so lift-off time for departures and touchdown time for arrivals.
 
 
 # Details - How are Go-Arounds Considered?
