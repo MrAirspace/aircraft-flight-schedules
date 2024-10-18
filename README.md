@@ -72,6 +72,10 @@ In case of data inaccuracies, please use the 'issues' tab of this repository.
 This concerns RWY times, so lift-off time for departures and touchdown time for arrivals.
 
 
+# Details - Why are There 2 Airports Listed Even Though Track Started/Ended on 'Ground' Flight Level?
+... GIG etc example --> airport reference point vs RWYs ...
+
+
 # Details - How are Go-Arounds Considered?
 In case of go-arounds/touch-and-go/balked landings, only the final touchdown is counted as touchdown time of the flight (with commercial flights in mind)
 
