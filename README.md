@@ -14,7 +14,7 @@ Can you link this to source github page?
 
 
 # Data Timeframes
-The data is published per quarter of a year. The quarters feature some overlap to ensure no flights are incomplete (cut in half).
+The data is published per quarter of a year. The 4 quarters of each year feature some overlap to ensure no flights are incomplete (not cut in half).
 
 
 # Data Enrichment - Against Limited Coverage in Certain Areas
@@ -74,6 +74,7 @@ This concerns RWY times, so lift-off time for departures and touchdown time for 
 
 # Details - Why are There 2 Airports Listed Even Though Track Started/Ended on 'Ground' Flight Level?
 ... SDU example --> aerodrome reference point vs coordinates of track are at RWY, not ARP ... to account for this when assigning an airport ...
+AMS example... if touchdown @ RWY 18R, hence search for airports within 9 km
 
 
 # Details - How are Go-Arounds Considered?
