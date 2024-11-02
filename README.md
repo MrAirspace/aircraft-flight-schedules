@@ -19,7 +19,7 @@ Published per quarter of a year, starting from 2024 onwards. Covers all flights 
 
 
 # Where to Get the Aircraft Flight Logs Datasets?
-See the 'releases' section of this repository for a parquet/tar/zip file with the flights per aircraft, per quarter of a year
+See the [Releases](https://github.com/MrAirspace/aircraft-flight-logs/releases) section of this repository for a parquet/tar/zip file with the flights per aircraft, per quarter of a year
 
 
 # Data Timeframes
