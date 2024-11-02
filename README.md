@@ -2,15 +2,25 @@
 
 WORK IN PROGRESS - Update expected in November 2024
 
-**_High-level_** flights per aircraft, extracted from ADS-B position reports of the ADSBlol initiative (https://github.com/adsblol).
-Published per quarter of a year, starting from 2024 onwards. Covers all flights globally, as long as within coverage of the ADSBlol initiative.
+Can you link this to source github page?
+
+
+Datasets featuring global, **_high-level_** flights per aircraft, extracted from ADS-B position reports.
+
+Published per quarter of a year, starting from 2024 onwards. Covers all flights as long as within coverage of the [ADSBlol](https://github.com/adsblol) initiative.
 
 ![EHAM ADSB Tracks to Flight Logs_spaced2](https://github.com/user-attachments/assets/c5f20d82-a135-4389-a926-6f21b0f47f79)
+![Picture2](https://github.com/user-attachments/assets/62051cc5-c60e-453f-abe3-a079c030ce39)
 
 
-# Where to Get the Datasets?
-See the 'releases' section of this repository for a tar/zip file with the flights per aircraft, per quarter of a year
-Can you link this to source github page?
+# Data Sources
+1) This project uses the ADS-B data from the [ADSBlol](https://github.com/adsblol) initiative. Consider supporting their great project. That would also make the flights extract of this repository even better.
+
+2) This project uses validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) to check extracted routes with additional route data (based on aircraft callsign). Consider supporting their great initiative. Again, that would also make the flights extract of this repository even better.
+
+
+# Where to Get the Aircraft Flight Logs Datasets?
+See the 'releases' section of this repository for a parquet/tar/zip file with the flights per aircraft, per quarter of a year
 
 
 # Data Timeframes
@@ -18,7 +28,7 @@ The data is published per quarter of a year. The 4 quarters of each year feature
 
 
 # Data Enrichment - Against Limited Coverage in Certain Areas
-Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of Andrew Whewell (https://github.com/vradarserver/standing-data/tree/main/routes/schema-01). Kindly note the departure/arrival times have not been updated accordingly in the basic dataset provided here.
+Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01). Kindly note the departure/arrival times have not been updated accordingly in the basic dataset provided here.
 
 
 # Data Enrichment - GPS Spoofing
