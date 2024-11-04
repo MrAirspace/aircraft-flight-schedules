@@ -53,7 +53,7 @@ At present, each quarter of extracted flights features approx. 10 million flight
 
 _Validation Case Study - AMS/EHAM Reference Day 2024-06-14_
 
-- Number of (commercial!) flights extracted from ADS-B data vs # flights from real AMS schedule --> significantly close, within 5% error margin
+- Number of (commercial!) flights extracted from ADS-B data vs # flights from AMS schedule --> significantly close, within 5% error margin
 
 - Airline representation --> significantly close, within 5% error margin
 
