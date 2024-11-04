@@ -1,10 +1,5 @@
 # Aircraft Flight Logs
 
-WORK IN PROGRESS - Update expected in November 2024
-
-Can you link this to source github page?
-
-
 Datasets featuring global, **_high-level_** flights per aircraft, extracted from ADS-B position reports.
 
 Published per quarter of a year, starting from 2024 onwards. Covers all flights as long as within coverage of the [ADSBlol](https://github.com/adsblol) initiative.
@@ -13,17 +8,16 @@ Published per quarter of a year, starting from 2024 onwards. Covers all flights 
 
 
 # Data Sources
-1) This project uses the ADS-B data from the [ADSBlol](https://github.com/adsblol) initiative. Consider supporting their great project. That would also make the flights extract of this repository even better.
-
-2) This project uses validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) to check extracted routes with additional route data (based on aircraft callsign). Consider supporting their great initiative. Again, that would also make the flights extract of this repository even better.
+1) This project uses the ADS-B data from the [ADSBlol](https://github.com/adsblol) initiative. Consider supporting their great project.
+2) This project uses validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) to check extracted routes with additional route data (based on aircraft callsign). Again, consider supporting this initiative.
 
 
 # Where to Get the Aircraft Flight Logs Datasets?
-See the [Releases](https://github.com/MrAirspace/aircraft-flight-logs/releases) section of this repository for a parquet/tar/zip file with the flights per aircraft, per quarter of a year
+See the [Releases](https://github.com/MrAirspace/aircraft-flight-logs/releases) section of this repository for a parquet file with the flights per aircraft, per quarter of a year.
 
 
 # How to Load the Dataset?
-The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10 million flights and 500,000 aircraft, which in csv format would total approx. 3 GB. Hence the selection of a parquet filetype, which stays below 1 GB.
+The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10 million flights and 500,000 aircraft, which in csv format would total approx. 3 GB. Hence the selection of a parquet filetype, which stays far below 1 GB.
 Loading a parquet file is very straightforward with python:
 
 `df = pandas.read_parquet('2024_Q1.parquet')`
@@ -36,15 +30,11 @@ The data is published per quarter of a year. The 4 quarters of each year feature
 
 
 # Data Enrichment - Against Limited Coverage in Certain Areas
-Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01). Kindly note the departure/arrival times have not been updated accordingly in the basic dataset provided here.
+Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
 
 
 # Data Enrichment - GPS Spoofing
 Given ADS-B transmissions simply sending location data, wrong location data as a result of GPS spoofing can also be transmitted. Once more, the added column with callsign vs route lookup allows to filter out those flights where aircraft emitted wrong position data.
-
-
-# Detailed Data and Support
-If you require specfic data or analyses, you can contact me, details in my github profile. More detailed datasets available upon request include updated departure/arrival times for those cases where the aircraft track was not complete (1), on/off-block instead of RWY times (2), used RWY per flight (3), among other data. Furthermore, advanced passenger estimates per flight (4) taking into consideration the type of flight, time of day, etc can be provided upon request.
 
 
 # Data Coverage
@@ -57,12 +47,11 @@ Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonab
 
 
 # Flights Extracts - Validation Case Study
-Given the fact that ADSBlol coverage improves regularly, validation is a never finished task, especially for airports/flights all over the world.
+Given the fact that ADSBlol coverage improves regularly, validation of the extracted flights is a never finished task, especially given the global scope.
 
-At present, each quarter of extracted flights features approx. 10 million flights and 500,000 aircraft. In more detail, flights for AMS/EHAM airport have been analysed and outcomes documented below.
+At present, each quarter of extracted flights features approx. 10 million flights and 500,000 aircraft.
 
-_Validation case study_
-AMS/EHAM reference day 2024-06-14
+_Validation Case Study - AMS/EHAM Reference Day 2024-06-14_
 
 - Number of (commercial!) flights extracted from ADS-B data vs # flights from real AMS schedule --> significantly close, within 5% error margin
 
@@ -72,7 +61,7 @@ AMS/EHAM reference day 2024-06-14
 
 
 # License
-Please use in line with license defined in this repository. No guarantee, liability, warranty. All open-source. Free to use.
+Please use in line with the license defined in this repository. No guarantee, liability, warranty. All open-source.
 
 
 # Issues Reporting
@@ -82,10 +71,14 @@ In case of data inaccuracies, please use the 'issues' tab of this repository.
 # Details - What are the Date/Times in the Datasets?
 This concerns RWY times, so lift-off time for departures and touchdown time for arrivals.
 
+However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
+![image](https://github.com/user-attachments/assets/6c5e04a3-3268-4d6f-91cc-9f1ab479028b)
 
-# Details - Why are There 2 Airports Listed Even Though Track Started/Ended on 'Ground' Flight Level?
-... SDU example --> aerodrome reference point vs coordinates of track are at RWY, not ARP ... to account for this when assigning an airport ...
-AMS example... if touchdown @ RWY 18R, hence search for airports within 9 km
+For those cases, the beginning/end of the track has been selected as the time of the flight.
+
+
+# Details - Why are There Multiple Airports Listed for a Flight?
+Similar to the section above, for those cases where the track does not start or stop at the airport, multiple airports in the vicinity of the first/last position of the ADS-B track have been listed as options.
 
 
 # Details - How are Go-Arounds Considered?
