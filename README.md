@@ -64,10 +64,6 @@ _Validation Case Study - AMS/EHAM Reference Day 2024-06-14_
 Please use in line with the license defined in this repository. No guarantee, liability, warranty. All open-source.
 
 
-# Issues Reporting
-In case of data inaccuracies, please use the 'issues' tab of this repository.
-
-
 # Details - What are the Date/Times in the Datasets?
 This concerns RWY times, so lift-off time for departures and touchdown time for arrivals.
 
