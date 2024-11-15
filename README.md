@@ -17,7 +17,7 @@ See the [Releases](https://github.com/MrAirspace/aircraft-flight-logs/releases) 
 
 
 # How to Load the Dataset?
-The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10 million flights and 500,000 aircraft, which in csv format would total approx. 3 GB. Hence the selection of a parquet filetype, which stays far below 1 GB.
+The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10-12+ million flights and ~500,000 aircraft, which in csv format would total approx. 3 GB. Hence the selection of a parquet filetype, which stays far below 1 GB.
 Loading a parquet file is very straightforward with python:
 
 `df = pandas.read_parquet('2024_Q1.parquet')`
