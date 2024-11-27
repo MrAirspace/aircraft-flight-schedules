@@ -4,7 +4,6 @@ Datasets featuring global, **_high-level_** flight schedules per aircraft, extra
 
 Published per quarter of a year, starting from 2024 onwards. Covers all flights as long as within coverage of the [ADSBlol](https://github.com/adsblol) initiative.
 
-![From adsb to flight schedule](https://github.com/user-attachments/assets/056133d8-ff44-437b-acdd-8866df22f7b1)
 
 
 # Data Sources
