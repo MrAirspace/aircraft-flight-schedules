@@ -15,7 +15,7 @@ Published per quarter of a year, starting from 2024 onwards. Covers all flights 
 # Data Processing
 Each day, ADSBlol publishes ADS-B data in two versions: prod-0 and staging-0. The largest file (by file size) is selected for each day.
 
-After extracting the data, only the 'full' ADS-B transmissions are retained — approximately 1 out of every 4 transmissions. This ensures that processing all cumulative data for each quarter of the year remains feasible:
+After extracting the data, only the 'full' ADS-B transmissions are retained — approximately 1 out of every 4 transmissions. This ensures that processing all cumulative data for each quarter of a year remains feasible:
 ![full transmission only](https://github.com/user-attachments/assets/b029b3a1-c431-4c2a-8b52-21170b2b1d30)
 
 
