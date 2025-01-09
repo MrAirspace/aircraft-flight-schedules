@@ -12,7 +12,14 @@ Published per quarter of a year, starting from 2024 onwards. Covers all flights 
 2) This project uses validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) to check extracted routes with additional route data (based on aircraft callsign). Again, consider supporting this initiative.
 
 
-# Where to Get the Aircraft Flight Logs Datasets?
+# Data Processing
+Each day, ADSBlol publishes ADS-B data in two versions: prod-0 and staging-0. The largest file (by file size) is selected for each day.
+
+After extracting the data, only the 'full' ADS-B transmissions are retained — approximately 1 out of every 4 transmissions. This ensures that processing all cumulative data for each quarter of the year remains feasible:
+![full transmission only](https://github.com/user-attachments/assets/b029b3a1-c431-4c2a-8b52-21170b2b1d30)
+
+
+# Where to Get the Extracted Flight Datasets?
 See the [Releases](https://github.com/MrAirspace/aircraft-flight-logs/releases) section of this repository for a parquet file with the flights per aircraft, per quarter of a year.
 
 
@@ -65,16 +72,15 @@ Please use in line with the license defined in this repository. No guarantee, no
 
 
 # Details - What are the Date/Times in the Datasets?
-This concerns RWY times, so lift-off time for departures and touchdown time for arrivals.
-
-However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
+This concerns high-level/approximated RWY times, so lift-off time for departures and touchdown time for arrivals. This is generally reference to the first 'ground' entry for arrivals, and the last 'ground' entry for departures. However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
 ![image](https://github.com/user-attachments/assets/6c5e04a3-3268-4d6f-91cc-9f1ab479028b)
 
-For those cases, the beginning/end of the track has been selected as the time of the flight.
+For those cases, the beginning/end of the track has been selected as the time of the flight. For further implications, see section below.
 
 
 # Details - Why are There Multiple Airports Listed for a Flight?
 Similar to the section above, for those cases where the track does not start or stop at the airport, multiple airports in the vicinity of the first/last position of the ADS-B track have been listed as options.
+To nevertheless determine the plausible airport of origin/destination, validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) has been included to match the aircraft flight callsign with external route data.
 
 
 # Details - How are Go-Arounds Considered?
