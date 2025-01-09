@@ -72,7 +72,7 @@ Please use in line with the license defined in this repository. No guarantee, no
 
 
 # Details - What are the Date/Times in the Datasets?
-This concerns high-level/approximated RWY times, so lift-off time for departures and touchdown time for arrivals. This is generally reference to the first 'ground' entry for arrivals, and the last 'ground' entry for departures. However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
+This concerns high-level/approximated RWY times in UTC, so lift-off time for departures and touchdown time for arrivals. This is generally reference to the first 'ground' entry for arrivals, and the last 'ground' entry for departures. However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
 ![image](https://github.com/user-attachments/assets/6c5e04a3-3268-4d6f-91cc-9f1ab479028b)
 
 For those cases, the beginning/end of the track has been selected as the time of the flight. For further implications, see section below.
