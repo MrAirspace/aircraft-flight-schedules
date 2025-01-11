@@ -56,7 +56,7 @@ Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonab
 # Flights Extracts - Validation Case Study
 Given the fact that ADSBlol coverage improves regularly, validation of the extracted flights is a never finished task, especially given the global scope.
 
-At present, each quarter of extracted flights features approx. 10-12+ million flights and ~500,000 aircraft.
+At present, each quarter of extracted flights features approx. 10-13+ million flights and ~500,000 aircraft.
 
 _Validation Case Study - AMS/EHAM Reference Day 2024-06-14_
 
