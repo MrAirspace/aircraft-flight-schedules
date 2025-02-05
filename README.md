@@ -16,6 +16,7 @@ Published per quarter of a year, starting from 2024+ onwards. Covers all flights
 Each day, ADSBlol publishes ADS-B data in two versions: prod-0 and staging-0. The largest file (by file size) is selected for each day.
 
 After extracting the data, only the 'full' ADS-B transmissions are retained — approximately 1 out of every 4 transmissions. This ensures that processing all cumulative data for each quarter of a year remains feasible:
+
 ![full transmission only](https://github.com/user-attachments/assets/b029b3a1-c431-4c2a-8b52-21170b2b1d30)
 
 
@@ -73,6 +74,7 @@ Please use in line with the license defined in this repository. No guarantee, no
 
 # Details - What are the Date/Times in the Datasets?
 This concerns high-level/approximated RWY times in UTC, so lift-off time for departures and touchdown time for arrivals. This is generally reference to the first 'ground' entry for arrivals, and the last 'ground' entry for departures. However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
+
 ![image](https://github.com/user-attachments/assets/6c5e04a3-3268-4d6f-91cc-9f1ab479028b)
 
 For those cases, the beginning/end of the track has been selected as the time of the flight. For further implications, see section below.
