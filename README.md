@@ -1,10 +1,10 @@
 # Aircraft Flight Logs
 
-Datasets featuring global, **_high-level_** flight schedules extracted from aircraft ADS-B position transmissions.
+Datasets featuring global, **_high-level_** flight schedules extracted from worldwide aircraft ADS-B position transmissions.
 
 Published per quarter of a year, starting from 2024+ onwards. Covers all flights globally as long as within coverage of the [ADSBlol](https://github.com/adsblol) initiative.
 
-![From adsb to flight schedule](https://github.com/user-attachments/assets/58214f26-56b0-430b-89cb-662999b68742)
+![adsb_to_flightschedules_ams_example](https://github.com/user-attachments/assets/182bb1b7-c5b9-46b5-98fe-74fc6d637cdd)
 
 
 # Data Sources
