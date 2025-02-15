@@ -34,7 +34,7 @@ Furthermore, to check the parquet dataset without python, you can use tools like
 
 
 # Data Timeframes
-The data is published per quarter of a year. The 4 quarters of each year feature some overlap to ensure no flights are incomplete (not cut in half). Thereby, when combining the quarterly files to a yearly schedule, there will be some overlap.
+The data is published per quarter of a year. The 4 quarters of each year feature some overlap to ensure flights are complete (not cut in half at the quarter boundaries). Thereby, when combining the quarterly files to a yearly schedule, there will be some overlap in flights.
 
 Do not use 'df.drop_duplicates()', but instead identify overlap flights by checking whether the entry in the df column 'Track_Origin_DateTime_UTC' falls within the quarter months of the pertaining parquet file:
 
