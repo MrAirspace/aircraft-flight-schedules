@@ -24,8 +24,8 @@ After extracting the data, only the 'full' ADS-B transmissions are retained — 
 See the [Releases](https://github.com/MrAirspace/aircraft-flight-logs/releases) section of this repository for a parquet file with the flights per aircraft, per quarter of a year.
 
 
-# How to Load the Dataset?
-The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10-12+ million flights and ~500,000 aircraft, which in csv format would total approx. 3 GB. Hence the selection of a parquet filetype, which stays far below 1 GB.
+# How to Load the Extracted Flight Dataset?
+The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10-13+ million flights and ~500,000 aircraft, which in csv format would total approx. 3 GB. Hence the selection of a parquet filetype, which stays far below 1 GB.
 Loading a parquet file is very straightforward with python:
 
 `df = pandas.read_parquet('2024_Q1.parquet')`
@@ -62,20 +62,6 @@ Number of receivers/antennas of ADSBlol initiative (image above)
 
 ![image](https://github.com/user-attachments/assets/b96a126c-00aa-4076-9882-f5a84669eb13)
 Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonable ops in all continents - no midnight situation in major markets (image above)
-
-
-# Flights Extracts - Validation Case Study
-Given the fact that ADSBlol coverage improves regularly, validation of the extracted flights is a never finished task, especially given the global scope.
-
-At present, each quarter of extracted flights features approx. 10-13+ million flights and ~500,000 aircraft.
-
-_Validation Case Study - AMS/EHAM Reference Day 2024-06-14_
-
-- Number of (commercial!) flights extracted from ADS-B data vs # flights from AMS schedule --> significantly close, within 5% error margin
-
-- Airline representation --> significantly close, within 5% error margin
-
-- Destination/origin of a flight accurate 73% of time purely based on ADS-B track data, improved to 95+% by using callsign vs route lookup
 
 
 # License
