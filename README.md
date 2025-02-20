@@ -1,4 +1,4 @@
-# Aircraft Flight Logs
+# Aircraft ADS-B Flight Schedules
 
 Datasets featuring global, **_high-level_** flight schedules extracted from worldwide aircraft ADS-B position transmissions.
 
