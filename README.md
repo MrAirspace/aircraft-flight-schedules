@@ -15,7 +15,7 @@ Published per quarter of a year, starting from 2024+ onwards. Covers all flights
 # Data Processing
 Each day, ADSBlol publishes ADS-B data in two versions: prod-0 and staging-0. The largest file (by file size) is selected for each day.
 
-After extracting the data, only the 'full' ADS-B transmissions are retained — approximately 1 out of every 4 transmissions. This ensures that processing all cumulative data for each quarter of a year remains feasible:
+After extracting the data, only the 'full' ADS-B transmissions are retained - approximately 1 out of every 4 transmissions. This ensures that processing all cumulative data for each quarter of a year remains feasible:
 
 ![full transmission only](https://github.com/user-attachments/assets/b029b3a1-c431-4c2a-8b52-21170b2b1d30)
 
@@ -47,14 +47,6 @@ elif ... (for the other quarters)
 ```
 
 
-# Data Enrichment - Against Limited Coverage in Certain Areas
-Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
-
-
-# Data Enrichment - GPS Spoofing
-Given ADS-B transmissions simply sending location data, wrong location data as a result of GPS spoofing can also be transmitted. Once more, the added column with callsign vs route lookup allows to filter out those flights where aircraft emitted wrong position data.
-
-
 # Data Coverage
 _Status Q2 2024_
 ![image](https://github.com/user-attachments/assets/92117619-ecc2-48f3-bc73-07407cca4445)
@@ -62,6 +54,14 @@ Number of receivers/antennas of ADSBlol initiative (image above)
 
 ![image](https://github.com/user-attachments/assets/b96a126c-00aa-4076-9882-f5a84669eb13)
 Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonable ops in all continents - no midnight situation in major markets (image above)
+
+
+# Data Enrichment - Against Limited Coverage in Certain Areas
+Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
+
+
+# Data Enrichment - GPS Spoofing
+Given ADS-B transmissions simply sending location data, wrong location data as a result of GPS spoofing can also be transmitted. Once more, the added column with callsign vs route lookup allows to filter out those flights where aircraft emitted wrong position data.
 
 
 # License
