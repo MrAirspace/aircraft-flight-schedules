@@ -15,8 +15,7 @@ Published per quarter of a year, starting from 2024+ onwards. Covers all flights
 # Data Processing
 Each day, ADSBlol publishes ADS-B data in two versions: prod-0 and staging-0. The largest file (by file size) is selected for each day.
 
-After extracting the data, only the 'full' ADS-B transmissions are retained - approximately 1 out of every 4 transmissions. This ensures that processing all cumulative data for each quarter of a year remains feasible:
-
+After extracting the data, ADS-B transmissions are retained for all aircraft, but only about 1 in every 4 messages per aircraft is kept - more specifically the detailed ones, not the basic intermediate transmissions. This ensures that processing the cumulative data for each quarter of a year remains feasible:
 ![full transmission only](https://github.com/user-attachments/assets/b029b3a1-c431-4c2a-8b52-21170b2b1d30)
 
 
@@ -39,7 +38,7 @@ The data is published per quarter of a year. The 4 quarters of each year feature
 Do not use 'df.drop_duplicates()', but instead identify overlap flights by checking whether the entry in the df column 'Track_Origin_DateTime_UTC' falls within the quarter months of the pertaining parquet file:
 
 ```
-df['Month_UTC'] = pandas.to_datetime(df['Track_Origin_DateTime_UTC'], errors='coerce').dt.month
+df['Month_UTC'] = pandas.to_datetime(df['Track_Origin_DateTime_UTC'], errors = 'coerce').dt.month
 
 if str(file).endswith('Q1.parquet'):
     df['Inside_Season'] = df['Month_UTC'].isin([1, 2, 3])
@@ -66,6 +65,10 @@ Given ADS-B transmissions simply sending location data, wrong location data as a
 
 # License
 Please use in line with the license defined in this repository. No guarantee, no liability, no warranty. All open-source.
+
+
+# Contact
+For questions or citation, please refer to my LinkedIn profile [Sebastiaan Menger - LinkedIn](https://de.linkedin.com/in/sebastiaanmenger)
 
 
 # Details - What are the Date/Times in the Datasets?
