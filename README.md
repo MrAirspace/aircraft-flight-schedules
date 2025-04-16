@@ -68,7 +68,7 @@ Please use in line with the license defined in this repository. No guarantee, no
 
 
 # Contact
-For questions or citation, please refer to my LinkedIn profile [Sebastiaan Menger - LinkedIn](https://de.linkedin.com/in/sebastiaanmenger)
+For questions, please refer to my LinkedIn profile [Sebastiaan Menger - LinkedIn](https://de.linkedin.com/in/sebastiaanmenger)
 
 
 # Details - What are the Date/Times in the Datasets?
