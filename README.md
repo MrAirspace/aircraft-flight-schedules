@@ -87,7 +87,7 @@ Occasionally, in case of flight tracks with large timegaps (1), potential GPS sp
 
 In the 2024 datasets, on the mentioned route, this could worst case result in approx. 10% duplicate flights being created (tracks concentration part 1 and tracks concentration part 2 being considered as separate flights). For the 2025-Q2 datasets and onwards, the algorithm has been tweaked to also check callsign matches of the transmission reports during the enroute phase, to reduce duplicates (on a route like DXB - FRA this resulted in 95%+ accurate flights):
 
-![timegaps vs gps spoofing vs flight linking](https://github.com/user-attachments/assets/dfa23e63-ed2e-4e1c-b5ad-a85b27b6bf90)
+![timegaps vs gps spoofing vs flight linking_v4](https://github.com/user-attachments/assets/25e8ae56-2823-4764-9e4f-07dd74c04fa5)
 
 
 # Details - How are Go-Arounds Considered?
