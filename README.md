@@ -1,5 +1,3 @@
-# Aircraft Flight Schedules - ADS-B Derived
-
 Datasets featuring global, **_high-level_** flight schedules extracted from worldwide aircraft ADS-B position transmissions.
 
 Published per quarter of a year, starting from 2024+ onwards. Covers all flights globally as long as within coverage of the [ADSBlol](https://github.com/adsblol) initiative.
@@ -15,7 +13,7 @@ Published per quarter of a year, starting from 2024+ onwards. Covers all flights
 # Data Processing
 Each day, ADSBlol publishes ADS-B data in two versions: prod-0 and staging-0. The largest file (by file size) is selected for each day.
 
-After extracting the data, ADS-B transmissions are retained for all aircraft, but only about 1 in every 4 messages per aircraft is kept - more specifically the detailed ones, not the basic intermediate transmissions. This ensures that processing the cumulative data for each quarter of a year remains feasible:
+After extracting the data, ADS-B transmissions are retained for all aircraft, but only about 1 in every 4 messages per aircraft is kept - more specifically the detailed ones, not the basic intermediate transmissions. This primarily affects the accurcy of the enroute phase which for extraction of arrival and departure data of a flight is of less relevance anyway. At the same time, this ensures that processing the cumulative data for each quarter of a year remains feasible:
 ![full transmission only](https://github.com/user-attachments/assets/b029b3a1-c431-4c2a-8b52-21170b2b1d30)
 
 
@@ -82,6 +80,14 @@ For those cases, the beginning/end of the track has been selected as the time of
 # Details - Why are There Multiple Airports Listed for a Flight?
 Similar to the section above, for those cases where the track does not start or stop at the airport, multiple airports in the vicinity of the first/last position of the ADS-B track have been listed as options.
 To nevertheless determine the plausible airport of origin/destination, validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) has been included to match the aircraft flight callsign with external route data.
+
+
+# Details - Potential Duplicates
+Occasionally, in case of flight tracks with large timegaps (1), potential GPS spoofing (2) or detours due to (e.g.) thunderstorms (3), the flight linking algorithm could introduce a limited amount of duplicate filghts. An example is the Frankfurt (FRA) to Dubai (DXB) route, where large (hours) timegaps exist in the adsb position reports, and potentially also a bit of GPS spoofing over Turkey/Black Sea. This could sometimes make it difficult to determine what parts of the route belong together, or potentially a landing occured in between (in an area without coverage).
+
+In the 2024 datasets, on the mentioned route, this could worst case result in approx. 10% duplicate flights being created (tracks concentration part 1 and tracks concentration part 2 being considered as separate flights). For the 2025 Q2 datasets and onwards, the algorithm has been tweaked to also check callsign matches of the transmission reports during the enroute phase, to reduce duplicates (on a route like DXB - FRA this resulted in 95%+ accurate flights):
+
+![timegaps vs gps spoofing vs flight linking](https://github.com/user-attachments/assets/dfa23e63-ed2e-4e1c-b5ad-a85b27b6bf90)
 
 
 # Details - How are Go-Arounds Considered?
