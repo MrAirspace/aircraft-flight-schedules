@@ -85,7 +85,7 @@ To nevertheless determine the plausible airport of origin/destination, validatio
 # Details - Potential Duplicates
 Occasionally, in case of flight tracks with large timegaps (1), potential GPS spoofing (2) or detours due to (e.g.) thunderstorms (3), the flight linking algorithm could introduce a limited amount of duplicate filghts. An example is the Frankfurt (FRA) to Dubai (DXB) route, where large (hours) timegaps exist in the ADS-B position reports, and potentially also a bit of GPS spoofing over Turkey / the Black Sea. This could sometimes make it difficult to determine what parts of the route belong together, or potentially a landing occurred in between (in an area without coverage).
 
-In the 2024 datasets, on the mentioned route, this could worst case result in approx. 10% duplicate flights being created (tracks concentration part 1 and tracks concentration part 2 being considered as separate flights). For the 2025 Q2 datasets and onwards, the algorithm has been tweaked to also check callsign matches of the transmission reports during the enroute phase, to reduce duplicates (on a route like DXB - FRA this resulted in 95%+ accurate flights):
+In the 2024 datasets, on the mentioned route, this could worst case result in approx. 10% duplicate flights being created (tracks concentration part 1 and tracks concentration part 2 being considered as separate flights). For the 2025-Q2 datasets and onwards, the algorithm has been tweaked to also check callsign matches of the transmission reports during the enroute phase, to reduce duplicates (on a route like DXB - FRA this resulted in 95%+ accurate flights):
 
 ![timegaps vs gps spoofing vs flight linking](https://github.com/user-attachments/assets/dfa23e63-ed2e-4e1c-b5ad-a85b27b6bf90)
 
