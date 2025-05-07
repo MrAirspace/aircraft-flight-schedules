@@ -13,7 +13,7 @@ Published per quarter of a year, starting from 2024+ onwards. Covers all flights
 # Data Processing
 Each day, ADSBlol publishes ADS-B data in two versions: prod-0 and staging-0. The largest file (by file size) is selected for each day.
 
-After extracting the data, ADS-B transmissions are retained for all aircraft, but only about 1 in every 4 messages per aircraft is kept - more specifically the detailed ones, not the basic intermediate transmissions. This primarily affects the accurcy of the enroute phase which for extraction of arrival and departure data of a flight is of less relevance anyway. At the same time, this ensures that processing the cumulative data for each quarter of a year remains feasible:
+After extracting the data, ADS-B transmissions are retained for all aircraft, but only about 1 in every 4 messages per aircraft is kept - more specifically the detailed ones, not the basic intermediate transmissions. This primarily affects the accuracy of the enroute phase which for extraction of arrival and departure data of a flight is of less relevance anyway. At the same time, this ensures that processing the cumulative data for each quarter of a year remains feasible:
 ![full transmission only](https://github.com/user-attachments/assets/b029b3a1-c431-4c2a-8b52-21170b2b1d30)
 
 
