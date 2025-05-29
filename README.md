@@ -90,7 +90,17 @@ In the 2024 datasets, on the mentioned route, this could worst case result in ap
 ![timegaps vs gps spoofing vs flight linking_v4](https://github.com/user-attachments/assets/25e8ae56-2823-4764-9e4f-07dd74c04fa5)
 
 
+# Details - Accuracy for General Aviation Flights
+The algorithm to extract a flight route from ADS-B positon reports is primarily focussed on commercial flights. The applied airport lookup list (to assign an airport to the start/end of a flight) is focussed on airports for commercial operations. As a result, several regional small airfields for general aviation (GA) are not included. This implies that the accuracy of the assigned airport of origin/airport of destination can be lower for GA flights. In the example below, a flight actually departing from EDKS (which is not in the airport lookup list), would then be assigned 'EDLW' as the closest airport featured in the lookup list:
+
+![Picture2](https://github.com/user-attachments/assets/e0dc6439-59f0-417b-a902-62125390e89d)
+
+This only concerns some GA flights, which is not the main aim of the dataset given its focus on commercial flights. If required, I can provide a more comprehensive dataset which features the first and last coordinates of each flight, so that manual assignment of a regional GA airfield becomes possible (upon request).
+
+![image](https://github.com/user-attachments/assets/fb43b350-3193-4b35-ace4-6cb571e66c12)
+
+
 # Details - How are Go-Arounds Considered?
-In case of go-arounds/touch-and-go/balked landings, only the final touchdown is counted as touchdown time of the flight (with commercial flights in mind).
+In case of go-arounds/touch-and-go/balked landings, only the final touchdown is counted as touchdown time of the flight - again with commercial flights in mind.
 
 ![image](https://github.com/user-attachments/assets/96de9c02-a204-4d1e-8198-3cb0069e93e2)
