@@ -95,7 +95,7 @@ The algorithm to extract a flight route from ADS-B positon reports is primarily 
 
 ![Picture2](https://github.com/user-attachments/assets/e0dc6439-59f0-417b-a902-62125390e89d)
 
-This only concerns some GA flights, which is not the main aim of the dataset given its focus on commercial flights. If required, I can provide a more comprehensive dataset which features the first and last coordinates of each flight, so that manual assignment of a regional GA airfield becomes possible (upon request).
+This only concerns some GA flights, which is not the main aim of the dataset given its focus on commercial flights. If required, a more comprehensive dataset can be provided which features the first and last coordinates of each flight, so that manual assignment of a regional GA airfield becomes possible (upon request - contact me).
 
 ![image](https://github.com/user-attachments/assets/fb43b350-3193-4b35-ace4-6cb571e66c12)
 
