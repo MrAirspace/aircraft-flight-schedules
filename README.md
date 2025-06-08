@@ -119,4 +119,4 @@ In case of go-arounds/touch-and-go/balked landings, only the final touchdown is 
 
 
 # The Future
-The more ADS-B receivers are added to the [adsb.lol initiative](https://github.com/adsblol/feed) through [ADSB.im software](https://adsb.im/home), the more accurate the derived flight schedules in this repository also get (airport of origin/destination and pertaining RWY times).
+The more ADS-B receivers are added to the [adsb.lol initiative](https://github.com/adsblol/feed) through [ADSB.im software](https://adsb.im/home), the more accurate the derived flight schedules in this repository also become (accuracy of airport of origin/destination and pertaining RWY times).
