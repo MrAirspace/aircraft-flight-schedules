@@ -70,6 +70,16 @@ Please use in line with the license defined in this repository. No guarantee, no
 For questions, please refer to my LinkedIn profile [Sebastiaan Menger - LinkedIn](https://de.linkedin.com/in/sebastiaanmenger)
 
 
+# Upon Request
+Contact me for enhanced datasets featuring:
+- Aircraft seats
+- Probable RWY used
+- Corrected RWY times in case of incomplete tracks
+- Plausible airport in case of incomplete tracks
+- Ancillary data such as airline type, alliance, etc
+- Calculation of rolling hour traffic/seats data
+
+
 # Details - What are the Date/Times in the Datasets?
 This concerns high-level/approximated RWY times in UTC, so lift-off time for departures and touchdown time for arrivals. This is generally reference to the first 'ground' entry for arrivals, and the last 'ground' entry for departures. However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
 
@@ -96,7 +106,7 @@ The algorithm to extract a flight route from ADS-B positon reports is primarily 
 
 ![Picture2](https://github.com/user-attachments/assets/e0dc6439-59f0-417b-a902-62125390e89d)
 
-This only concerns some GA flights, which is not the main aim of the dataset given its focus on commercial flights. If required, a more comprehensive dataset can be provided which features the first and last coordinates of each flight, so that manual assignment of a regional GA airfield becomes possible (upon request - contact me).
+This only concerns some GA flights, which is not the main aim of the dataset given its focus on commercial flights. From 2025 onwards, for each flight the origin lat/lon as well as destination lat/lon has been included, so that manual assignment of a regional GA airfield becomes possible.
 
 ![image](https://github.com/user-attachments/assets/fb43b350-3193-4b35-ace4-6cb571e66c12)
 
