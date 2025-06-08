@@ -75,6 +75,7 @@ Contact me for enhanced datasets featuring:
 - Aircraft seats
 - Probable RWY used
 - Corrected RWY times in case of incomplete tracks
+- RWY times in local timezone/daylight saving time
 - Plausible airport in case of incomplete tracks
 - Ancillary data such as airline type, alliance, etc
 - Calculation of rolling hour traffic/seats data
@@ -115,3 +116,7 @@ This only concerns some GA flights, which is not the main aim of the dataset giv
 In case of go-arounds/touch-and-go/balked landings, only the final touchdown is counted as touchdown time of the flight - again with commercial flights in mind.
 
 ![image](https://github.com/user-attachments/assets/96de9c02-a204-4d1e-8198-3cb0069e93e2)
+
+
+# The Future
+The more ADS-B receivers are added to the [adsb.lol initiative](https://github.com/adsblol/feed) through [ADSB.im software](https://adsb.im/home), the more accurate the derived flight schedules in this repository also get (airport of origin/destination and pertaining RWY times).
