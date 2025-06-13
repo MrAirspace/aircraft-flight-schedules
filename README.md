@@ -81,6 +81,8 @@ Contact me for enhanced datasets featuring:
 - Ancillary data such as airline type, alliance, etc
 - Calculation of rolling hour traffic/seats data
 
+![rollinghrplot_eham_example](https://github.com/user-attachments/assets/1972e76d-2a1b-4f35-9f70-d85467631c4a)
+
 
 # Details - What are the Date/Times in the Datasets?
 This concerns high-level/approximated RWY times in UTC, so lift-off time for departures and touchdown time for arrivals. This is generally reference to the first 'ground' entry for arrivals, and the last 'ground' entry for departures. However, there can also be cases with more limited ADS-B coverage, where the track does not start or stop at the airport:
