@@ -104,7 +104,7 @@ In the 2024 datasets, on the mentioned route, this could worst case result in ap
 
 ![timegaps vs gps spoofing vs flight linking_v4](https://github.com/user-attachments/assets/25e8ae56-2823-4764-9e4f-07dd74c04fa5)
 
-For the 2025-Q2 datasets and onwards, the algorithm has been tweaked to also check callsign matches of the transmission reports during the enroute phase, to reduce duplicates. On the aforementioned route DXB - FRA, this resulted in 95%+ accurate flights.
+For the 2025-Q2 datasets and onwards, the algorithm has been tweaked to also check callsign matches of the transmission reports during the enroute phase, to reduce duplicates. On the aforementioned route DXB - FRA, this resulted in 95+% accurate flights.
 
 
 # Details - Accuracy for General Aviation Flights
