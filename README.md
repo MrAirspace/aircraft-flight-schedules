@@ -23,12 +23,52 @@ See the [Releases](https://github.com/MrAirspace/aircraft-flight-logs/releases) 
 
 
 # How to Load the Extracted Flight Dataset?
-The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10-13+ million flights and ~500,000 aircraft, which in csv format would total approx. 3 GB. Hence the selection of a parquet filetype, which stays far below 1 GB.
+The parquet filetype has been selected to keep flights data manageable in terms of size and processing/loading times. Each quarter features approx. 10-15+ million flights and ~500,000 aircraft, which in csv format would total approx. 3+ GB. Hence the selection of a parquet filetype, which stays below 1 GB.
 Loading a parquet file is very straightforward with python:
 
 `df = pandas.read_parquet('2024_Q1.parquet')`
 
 Furthermore, to check the parquet dataset without python, you can use tools like [ParquetViewer](https://github.com/mukunku/ParquetViewer) which feature a user interface/GUI and can be installed on Windows as exe.
+
+
+# The Flight Schedules - Which Column is What?
+Below an explanation of which column features which data:
+![columns_arr](https://github.com/user-attachments/assets/39cadb32-6b70-44f8-9e1f-ac1429b652aa)
+'ICAO_Hex' = the hexagonal code of the aircraft transponder equipment
+
+'Reg' = the registration (tail number) of the aircraft
+
+'AC_Type' = the ICAO aircraft type code
+
+AC_Type_Description' = the full aircraft type designator inlcuding manufacturer
+
+'Airline' = the airline ICAO code, as derived from the callsign
+
+'Callsign' = the callsign of the flight, basically speaking a flight number for ATC purposes
+
+'Track_Origin_Lat' = starting point of the track of a flight (further definition in sections below) - latitude in decimal format
+
+'Track_Origin_Lon' = starting point of the track of a flight (further definition in sections below) - longitude in decimal format
+
+'Track_Origin_FL_Ft' = starting flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
+
+'Track_Origin_DateTime_UTC' = starting date and time of the track of a flight - UTC format
+
+'Track_Origin_ApplicableAirports' = airports in the vicinity of the starting point of the track of a flight - airport ICAO code (further details and possible cases in sections below)
+
+
+![columns_dep_and_route_validation](https://github.com/user-attachments/assets/cbf99be4-4de1-4a4e-af64-994656273e16)
+'Track_Destination_Lat' = endpoint of the track of a flight (further definition in sections below) - latitude in decimal format
+
+'Track_Destination_Lon' = endpoint of the track of a flight (further definition in sections below) - longitude in decimal format
+
+'Track_Destination_FL_Ft' = end flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
+
+'Track_Destination_DateTime_UTC' = end date and time of the track of a flight - UTC format
+
+'Track_Destination_ApplicableAirports' = airports in the vicinity of the endpoint of the track of a flight - airport ICAO code (further details and possible cases in sections below)
+
+'Route_Validation_Based_on_Callsign' = to correct flights of which the ADS-B track was incomplete (see details in sections below), a callsign vs route lookup ensures a start/end airport are nevertheless available - for reference in addition to the raw data
 
 
 # Data Timeframes
@@ -72,7 +112,7 @@ For questions, please refer to my LinkedIn profile [Sebastiaan Menger - LinkedIn
 
 # Upon Request
 Contact me for enhanced datasets featuring:
-- Filtered airport-specific flight schedules
+- Filtered airport-specific cleaned flight schedules
 - Aircraft seats
 - Probable RWY used
 - Corrected RWY times in case of incomplete tracks
