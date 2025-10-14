@@ -34,7 +34,7 @@ Furthermore, to check the parquet dataset without python, you can use tools like
 # The Flight Schedules - Which Column is What?
 Below an explanation of which column features which data:
 ![columns_arr](https://github.com/user-attachments/assets/39cadb32-6b70-44f8-9e1f-ac1429b652aa)
-'ICAO_Hex' = the hexagonal code of the aircraft transponder equipment
+'ICAO_Hex' = the unique 24-bit hexadecimal address assigned to the aircraft transponder
 
 'Reg' = the registration (tail number) of the aircraft
 
