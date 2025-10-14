@@ -70,6 +70,8 @@ AC_Type_Description' = the full aircraft type designator inlcuding manufacturer
 
 'Route_Validation_Based_on_Callsign' = to correct flights of which the ADS-B track was incomplete (see details in sections below), a callsign vs route lookup ensures a start/end airport are nevertheless available - for reference in addition to the raw data
 
+_Note: sometimes the ADS-B antenna coverage is limited to the extent that the entire arrival or departure part of a flight was unavailable. In that case, those cells feature a '-' only._
+
 
 # Data Timeframes
 The data is published per quarter of a year. The 4 quarters of each year feature some overlap to ensure flights are complete (not cut in half at the quarter boundaries). Thereby, when combining the quarterly files to a yearly schedule, there will be some overlap in flights.
