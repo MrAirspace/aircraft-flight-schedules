@@ -54,7 +54,7 @@ AC_Type_Description' = the full aircraft type designator inlcuding manufacturer
 
 'Track_Origin_DateTime_UTC' = starting date and time of the track of a flight - UTC format
 
-'Track_Origin_ApplicableAirports' = airports in the vicinity of the starting point of the track of a flight - airport ICAO code (further details and possible cases in sections below)
+'Track_Origin_ApplicableAirports' = airport(s) in the vicinity of the starting point of the track of a flight - airport ICAO code (further details and possible cases in sections below)
 
 
 ![columns_dep_and_route_validation](https://github.com/user-attachments/assets/cbf99be4-4de1-4a4e-af64-994656273e16)
@@ -66,7 +66,7 @@ AC_Type_Description' = the full aircraft type designator inlcuding manufacturer
 
 'Track_Destination_DateTime_UTC' = end date and time of the track of a flight - UTC format
 
-'Track_Destination_ApplicableAirports' = airports in the vicinity of the endpoint of the track of a flight - airport ICAO code (further details and possible cases in sections below)
+'Track_Destination_ApplicableAirports' = airport(s) in the vicinity of the endpoint of the track of a flight - airport ICAO code (further details and possible cases in sections below)
 
 'Route_Validation_Based_on_Callsign' = to correct flights of which the ADS-B track was incomplete (see details in sections below), a callsign vs route lookup ensures a start/end airport are nevertheless available - for reference in addition to the raw data
 
