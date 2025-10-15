@@ -34,41 +34,41 @@ Furthermore, to check the parquet dataset without python, you can use tools like
 # The Flight Schedules - Which Column is What?
 Below an explanation of which column features which data:
 ![columns_arr](https://github.com/user-attachments/assets/39cadb32-6b70-44f8-9e1f-ac1429b652aa)
-'ICAO_Hex' = the unique 24-bit hexadecimal address assigned to the aircraft transponder
+- 'ICAO_Hex' = the unique 24-bit hexadecimal address assigned to the aircraft transponder
 
-'Reg' = the registration (tail number) of the aircraft
+- 'Reg' = the registration (tail number) of the aircraft
 
-'AC_Type' = the ICAO aircraft type code
+- 'AC_Type' = the ICAO aircraft type code
 
-AC_Type_Description' = the full aircraft type designator inlcuding manufacturer
+- AC_Type_Description' = the full aircraft type designator inlcuding manufacturer
 
-'Airline' = the airline ICAO code, as derived from the callsign
+- 'Airline' = the airline ICAO code, as derived from the callsign
 
-'Callsign' = the callsign of the flight, basically speaking a flight number for ATC purposes
+- 'Callsign' = the callsign of the flight, basically speaking a flight number for ATC purposes
 
-'Track_Origin_Lat' = starting point of the track of a flight (further definition in sections below) - latitude in decimal format
+- 'Track_Origin_Lat' = starting point of the track of a flight (further definition in sections below) - latitude in decimal format
 
-'Track_Origin_Lon' = starting point of the track of a flight (further definition in sections below) - longitude in decimal format
+- 'Track_Origin_Lon' = starting point of the track of a flight (further definition in sections below) - longitude in decimal format
 
-'Track_Origin_FL_Ft' = starting flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
+- 'Track_Origin_FL_Ft' = starting flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
 
-'Track_Origin_DateTime_UTC' = starting date and time of the track of a flight - UTC format
+- 'Track_Origin_DateTime_UTC' = starting date and time of the track of a flight - UTC format
 
-'Track_Origin_ApplicableAirports' = airport(s) in the vicinity of the starting point of the track of a flight - airport ICAO code (further details and possible cases in sections below)
+- 'Track_Origin_ApplicableAirports' = airport(s) in the vicinity of the starting point of the track of a flight - airport ICAO code (further details and possible cases in sections below)
 
 
 ![columns_dep_and_route_validation](https://github.com/user-attachments/assets/cbf99be4-4de1-4a4e-af64-994656273e16)
-'Track_Destination_Lat' = endpoint of the track of a flight (further definition in sections below) - latitude in decimal format
+- 'Track_Destination_Lat' = endpoint of the track of a flight (further definition in sections below) - latitude in decimal format
 
-'Track_Destination_Lon' = endpoint of the track of a flight (further definition in sections below) - longitude in decimal format
+- 'Track_Destination_Lon' = endpoint of the track of a flight (further definition in sections below) - longitude in decimal format
 
-'Track_Destination_FL_Ft' = end flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
+- 'Track_Destination_FL_Ft' = end flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
 
-'Track_Destination_DateTime_UTC' = end date and time of the track of a flight - UTC format
+- 'Track_Destination_DateTime_UTC' = end date and time of the track of a flight - UTC format
 
-'Track_Destination_ApplicableAirports' = airport(s) in the vicinity of the endpoint of the track of a flight - airport ICAO code (further details and possible cases in sections below)
+- 'Track_Destination_ApplicableAirports' = airport(s) in the vicinity of the endpoint of the track of a flight - airport ICAO code (further details and possible cases in sections below)
 
-'Route_Validation_Based_on_Callsign' = to correct flights of which the ADS-B track was incomplete (see details in sections below), a callsign vs route lookup ensures a start/end airport are nevertheless available - for reference in addition to the raw data
+- 'Route_Validation_Based_on_Callsign' = to correct flights of which the ADS-B track was incomplete (see details in sections below), a callsign vs route lookup ensures a start/end airport are nevertheless available - for reference in addition to the raw data
 
 _Note: sometimes the ADS-B antenna coverage is limited to the extent that the entire arrival or departure part of a flight was unavailable. In that case, those cells feature a '-' only._
 
