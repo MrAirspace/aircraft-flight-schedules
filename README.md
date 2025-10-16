@@ -52,7 +52,7 @@ Below an explanation of which column features which data:
 
 - 'Track_Origin_FL_Ft' = starting flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
 
-- 'Track_Origin_DateTime_UTC' = starting date and time of the track of a flight - UTC format
+- 'Track_Origin_DateTime_UTC' = starting date and time of the track of a flight - UTC format (further definition in sections below)
 
 - 'Track_Origin_ApplicableAirports' = airport(s) in the vicinity of the starting point of the track of a flight - airport ICAO code (further details and possible cases in sections below)
 
@@ -64,7 +64,7 @@ Below an explanation of which column features which data:
 
 - 'Track_Destination_FL_Ft' = end flight level of the track of a flight - can be 'ground' or flight level (depending on the ADS-B antenna coverage - see possible cases in sections below)
 
-- 'Track_Destination_DateTime_UTC' = end date and time of the track of a flight - UTC format
+- 'Track_Destination_DateTime_UTC' = end date and time of the track of a flight - UTC format (further definition in sections below)
 
 - 'Track_Destination_ApplicableAirports' = airport(s) in the vicinity of the endpoint of the track of a flight - airport ICAO code (further details and possible cases in sections below)
 
