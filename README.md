@@ -96,12 +96,8 @@ Number of receivers/antennas of ADSBlol initiative (image above)
 Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonable ops in all continents - no midnight situation in major markets (image above)
 
 
-# Data Enrichment - Against Limited Coverage in Certain Areas
-Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents, some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
-
-
-# Data Enrichment - GPS Spoofing
-Given ADS-B transmissions simply sending location data, wrong location data as a result of GPS spoofing can also be transmitted. Once more, the added column with callsign vs route lookup allows to filter out those flights where aircraft emitted wrong position data.
+# Data Enrichment - Against Limited Coverage in Certain Areas & GPS Spoofing
+Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents (1) or GPS spoofing (2), some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
 
 
 # License
@@ -132,6 +128,14 @@ This concerns high-level/approximated RWY times in UTC, so lift-off time for dep
 ![image](https://github.com/user-attachments/assets/6c5e04a3-3268-4d6f-91cc-9f1ab479028b)
 
 For those cases, the beginning/end of the track has been selected as the time of the flight. For further implications, see section below.
+
+
+# Details - GPS Spoofing
+Given ADS-B transmissions simply sending location data, wrong location data as a result of GPS spoofing can also be transmitted. This particularly affects areas in proximity of military conflicts. An example of GPS spoofed location data is featured in the image below (2024):
+
+![gps_spoofing](https://github.com/user-attachments/assets/bf12a800-5b33-4848-afa5-6aa6d00df0f5)
+
+In this case, the aircraft transmitted a location for its landing which is clearly spoofed. Since the algorithm to assign the airport where it landed can not find a suitable one, it assigns the closest one (OLBA - Beirut). In order to nevertheless determine the actual airport where it landed, the added column with callsign vs route lookup allows to understand the actual airport even in case of GPS spoofed incorrect position data.
 
 
 # Details - Why are There Multiple Airports Listed for a Flight?
