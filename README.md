@@ -135,7 +135,7 @@ Given ADS-B transmissions simply sending location data, wrong location data as a
 
 ![gps_spoofing](https://github.com/user-attachments/assets/bf12a800-5b33-4848-afa5-6aa6d00df0f5)
 
-In this case, the aircraft transmitted a location for its landing which is clearly spoofed. Since the algorithm to assign the airport where it landed can not find a suitable one, it assigns the closest one (OLBA - Beirut). In order to nevertheless determine the actual airport where it landed, the added column with callsign vs route lookup allows to understand the actual airport even in case of GPS spoofed incorrect position data.
+In this case, the aircraft transmitted a location for its landing which is clearly spoofed. Since the algorithm to assign the airport where it landed can not find a suitable airport, it assigns the closest one (OLBA - Beirut). In order to nevertheless determine the actual airport where it landed, the added column with callsign vs route lookup allows to understand the actual airport even in case of GPS spoofed incorrect position data.
 
 
 # Details - Why are There Multiple Airports Listed for a Flight?
