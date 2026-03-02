@@ -96,6 +96,13 @@ Number of receivers/antennas of ADSBlol initiative (image above)
 Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonable ops in all continents - no midnight situation in major markets (image above)
 
 
+_Update Q1 2026_
+
+Recorded position transmissions for a day in March 2026. Clearly apparent the increased coverage in South-America, Africa and Asia:
+
+<img width="1346" height="814" alt="Screenshot_20260302_180629" src="https://github.com/user-attachments/assets/61cacb93-69a8-411c-9654-098f84de2fb7" />
+
+
 # Data Enrichment - Against Limited Coverage in Certain Areas & GPS Spoofing
 Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents (1) or GPS spoofing (2), some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
 
