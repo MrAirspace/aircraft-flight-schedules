@@ -7,7 +7,7 @@ Published per quarter of a year, starting from 2024+ onwards. Covers all flights
 
 
 # Data Sources
-1) This project uses the ADS-B data from the [ADSBlol](https://github.com/adsblol) initiative. Consider supporting their great project.
+1) This project uses ADS-B data from the [ADSBlol](https://github.com/adsblol) initiative. Consider supporting their great project.
 2) This project uses validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) to check extracted routes with additional route data (based on aircraft callsign). Again, consider supporting this initiative.
 
 
