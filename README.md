@@ -145,7 +145,7 @@ Given ADS-B transmissions simply sending location data, wrong location data as a
 
 ![gps_spoofing](https://github.com/user-attachments/assets/bf12a800-5b33-4848-afa5-6aa6d00df0f5)
 
-In this case, the aircraft transmitted a location for its landing which is clearly spoofed. Since the algorithm to assign the airport where it landed can not find a suitable airport, it assigns the closest one (OLBA - Beirut). In order to nevertheless determine the actual airport where it landed, the added column with callsign vs route lookup allows to understand the actual airport even in case of GPS spoofed incorrect position data.
+In this case, the aircraft transmitted a location for its landing which is clearly spoofed. Since the algorithm to assign the airport where it landed can not find a suitable airport, it assigns the closest one (OLBA - Beirut). In order to nevertheless determine the actual airport where it landed (LLBG - Tel Aviv), the added column with callsign vs route lookup allows to understand the actual airport even in case of GPS spoofed incorrect position data.
 
 
 # Details - Why are There Multiple Airports Listed for a Flight?
@@ -174,10 +174,10 @@ This only concerns some GA flights, which is not the main aim of the dataset giv
 
 
 # Details - How are Go-Arounds Considered?
-In case of go-arounds/touch-and-go/balked landings, only the final touchdown is counted as touchdown time of the flight - again with commercial flights in mind.
+In case of go-arounds/touch-and-go/baulked landings, only the final touchdown is counted as touchdown time of the flight - again with commercial flights in mind.
 
 ![image](https://github.com/user-attachments/assets/96de9c02-a204-4d1e-8198-3cb0069e93e2)
 
 
 # The Future
-The more ADS-B receivers are added to the [adsb.lol initiative](https://github.com/adsblol/feed) through [ADSB.im software](https://adsb.im/home), the more accurate the derived flight schedules in this repository also become (accuracy of airport of origin/destination and pertaining RWY times).
+The more ADS-B receivers are added to the [adsb.lol initiative](https://github.com/adsblol/feed) through [ADSB.im software](https://adsb.im/home), the more accurate the derived flight schedules in this repository also become (accuracy of airport of origin/destination and pertaining RWY times). Please consider adding a receiver to the respective website using the links directly above.
