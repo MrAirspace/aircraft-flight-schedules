@@ -127,7 +127,7 @@ Contact me for enhanced datasets featuring:
 - RWY times in local timezone/daylight saving time
 - Plausible airport in case of incomplete tracks
 - Ancillary data such as airline type (FSC, LCC, etc), alliance, etc - Analysis
-- Calculation of rolling hour traffic/seats data - Example below:
+- Calculation of rolling hour traffic/pax/seats figures - Example below:
 
 ![rollinghrplot_eham_example](https://github.com/user-attachments/assets/1972e76d-2a1b-4f35-9f70-d85467631c4a)
 
