@@ -3,7 +3,7 @@ Datasets featuring global, **high-level** flight schedules extracted from worldw
 
 Published per quarter of a year, starting from 2024+ onwards. Covers all flights globally as long as within coverage of the [ADSBlol](https://github.com/adsblol) initiative.
 
-![from adsb to flightschedules_eham example final](https://github.com/user-attachments/assets/6ec77121-e02c-43f4-99d0-134e8e9db8e2)
+<img width="1704" height="1871" alt="from raw adsb to identified flights to extracted flight schedules" src="https://github.com/user-attachments/assets/57ab671a-12f6-4d1e-a251-8e745cda7005" />
 
 
 # Data Sources
