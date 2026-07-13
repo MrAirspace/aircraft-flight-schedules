@@ -3,7 +3,7 @@ Datasets featuring global, **high-level** flight schedules extracted from worldw
 
 Published per quarter of a year, starting from 2024+ onwards. Covers all flights globally as long as within coverage of the [ADSBlol](https://github.com/adsblol) initiative.
 
-<img width="1704" height="1871" alt="from raw adsb to identified flights to extracted flight schedules" src="https://github.com/user-attachments/assets/57ab671a-12f6-4d1e-a251-8e745cda7005" />
+<img width="1704" height="1929" alt="from raw adsb to identified flights to extracted flight schedules - example for egkk airport" src="https://github.com/user-attachments/assets/b214ab29-a7fe-46d4-9f6f-f26b26622ae4" />
 
 
 # Data Sources
