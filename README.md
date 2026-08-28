@@ -9,7 +9,7 @@ Published per quarter of a year, starting from 2024+ onwards. Covers all flights
 # Data Sources
 1) This project uses ADS-B data from the [ADSBlol](https://github.com/adsblol) initiative. Consider supporting their great project.
 2) This project uses validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) to check extracted routes with additional route data (based on aircraft callsign). Again, consider supporting this initiative.
-3) This project uses detailed aircraft type data (for commercial aircraft types), added by application of the [adsbdb.com](https://www.adsbdb.com/) public API. As with all of aforementioned sources, please consider supporting this great initiative.
+3) This project uses detailed aircraft type data (for airline aircraft types), added by application of the [adsbdb.com](https://www.adsbdb.com/) public API. As with all of aforementioned sources, please consider supporting this great initiative.
 
 
 # Data Processing
@@ -92,9 +92,6 @@ elif ... (for the other quarters)
 
 # Data Coverage
 _Status Q2 2024_
-![image](https://github.com/user-attachments/assets/92117619-ecc2-48f3-bc73-07407cca4445)
-Number of receivers/antennas of ADSBlol initiative (image above)
-
 ![image](https://github.com/user-attachments/assets/b96a126c-00aa-4076-9882-f5a84669eb13)
 Aircraft coverage of ADSBlol initiative. Time of day ~13:00 UTC to have reasonable ops in all continents - no midnight situation in major markets (image above)
 
@@ -126,10 +123,11 @@ Contact me for enhanced datasets featuring:
 - Corrected RWY times in case of incomplete tracks
 - RWY times in local timezone/daylight saving time
 - Plausible airport in case of incomplete tracks
-- Ancillary data such as airline type (FSC, LCC, etc), alliance, etc - Analysis
-- Calculation of rolling hour traffic/pax/seats figures - Example below:
+- Ancillary data such as airline type (FSC, LCC, etc), alliance, etc
+- Airport analyses such as yearly traffic patterns (e.g. seasonality) and calculation of rolling hour traffic/pax/seats figures - Examples below:
 
-![rollinghrplot_eham_example](https://github.com/user-attachments/assets/1972e76d-2a1b-4f35-9f70-d85467631c4a)
+<img width="1556" height="785" alt="eham_yr_frequencies" src="https://github.com/user-attachments/assets/fba17a77-ab87-4e22-a79f-d5af5850402d" />
+<img width="1896" height="932" alt="ATM roll MAY" src="https://github.com/user-attachments/assets/a1b76828-6df1-4391-94b8-e1e35dffa760" />
 
 
 # Details - What are the Date/Times in the Datasets?
