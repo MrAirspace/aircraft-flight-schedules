@@ -146,15 +146,15 @@ Given ADS-B transmissions simply sending location data, wrong location data as a
 In this case, the aircraft transmitted a location for its landing which is clearly spoofed. Since the algorithm to assign the airport where it landed can not find a suitable airport, it assigns the closest one (OLBA - Beirut). In order to nevertheless determine the actual airport where it landed (LLBG - Tel Aviv), the added column with callsign vs route lookup allows to understand the actual airport even in case of GPS spoofed incorrect position data.
 
 
-# Details - Why are There Multiple Airports Listed for a Flight - 1?
+# Details - Why are There Multiple Airports Listed for a Flight - Option 1?
 Similar to the section above, for those cases where the track does not start or stop at the airport, multiple airports in the vicinity of the first/last position of the ADS-B track have been listed as options.
 To nevertheless determine the plausible airport of origin/destination, validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) has been included to match the aircraft flight callsign with external route data.
 
 
-# Details - Why are There Multiple Airports Listed for a Flight - 2?
-Even in case a flight features a start or end 'ground' entry, occasionally still 2 airports can be listed as options. The reason for this is that the algorithms need to find an airport for a flight start/end, and in some cases the airport reference point vs a RWY can be quite far apart (see EHAM example). To always be able to assign an airport, the algorithm searches within a 9km range. However for some airports such as KSEA, this can then add KRNT as 2nd airport option for a flight:
+# Details - Why are There Multiple Airports Listed for a Flight - Option 2?
+Even in case a flight features a start or end 'ground' entry, occasionally still 2 airports can be listed as options. The reason for this is that the algorithms need to find an airport for a flight start/end, and in some cases the airport reference point vs. one of its RWYs can be quite far apart (see EHAM example). To always be able to assign an airport, the algorithm searches within a 9km range. However for some airports such as KSEA, this can then add KRNT as 2nd airport option for a flight:
 
-<img width="2458" height="1003" alt="capture area reason vs potential issues" src="https://github.com/user-attachments/assets/ef710290-7ce0-4eb2-9a0d-da24e9264d32" />
+<img width="2458" height="1003" alt="capture area reason vs potential issues" src="https://github.com/user-attachments/assets/ae7b916c-11c1-4c24-83c9-eb9eca855ec1" />
 
 The alternative to always search the closest airport for a flight would introduce other cases where that on its turn would not be the ideal approach either, hence the chosen way is (for these occasional cases) to deliver 2 options even though the entry is 'ground' - in those seldom cases a small check can be performed on the provided coordinates to assign to the correct airport.
 
