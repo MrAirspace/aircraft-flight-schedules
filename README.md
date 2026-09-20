@@ -73,7 +73,7 @@ Below an explanation of which column features which data:
 
 - 'Route_Validation_Based_on_Callsign' = to correct flights of which the ADS-B track was incomplete (see details in sections below), a callsign vs route lookup ensures a start/end airport are nevertheless available - for reference in addition to the raw data
 
-_Note: sometimes the ADS-B antenna coverage is limited to the extent that the entire arrival or departure part of a flight was unavailable. In that case, those arr or dep cells feature a "-" only._
+_Note: sometimes the ADS-B antenna coverage is limited to the extent that the entire arrival or departure part of a flight was unavailable. In that case, those arr or dep cells feature a " - " only._
 
 
 # Data Timeframes
