@@ -73,7 +73,7 @@ Below an explanation of which column features which data:
 
 - 'Route_Validation_Based_on_Callsign' = to correct flights of which the ADS-B track was incomplete (see details in sections below), a callsign vs route lookup ensures a start/end airport are nevertheless available - for reference in addition to the raw data
 
-_Note: sometimes the ADS-B antenna coverage is limited to the extent that the entire arrival or departure part of a flight was unavailable. In that case, those arr or dep cells feature a '-' only._
+_Note: sometimes the ADS-B antenna coverage is limited to the extent that the entire arrival or departure part of a flight was unavailable. In that case, those arr or dep cells feature a "-" only._
 
 
 # Data Timeframes
@@ -146,12 +146,12 @@ Given ADS-B transmissions simply sending location data, wrong location data as a
 In this case, the aircraft transmitted a location for its landing which is clearly spoofed. Since the algorithm to assign the airport where it landed can not find a suitable airport, it assigns the closest one (OLBA - Beirut). In order to nevertheless determine the actual airport where it landed (LLBG - Tel Aviv), the added column with callsign vs route lookup allows to understand the actual airport even in case of GPS spoofed incorrect position data.
 
 
-# Details - Why are There Multiple Airports Listed for a Flight - Option 1?
+# Details - Why are There Multiple Airports Listed for a Flight? - Option 1
 Similar to the section above, for those cases where the track does not start or stop at the airport, multiple airports in the vicinity of the first/last position of the ADS-B track have been listed as options.
 To nevertheless determine the plausible airport of origin/destination, validation data from [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01) has been included to match the aircraft flight callsign with external route data.
 
 
-# Details - Why are There Multiple Airports Listed for a Flight - Option 2?
+# Details - Why are There Multiple Airports Listed for a Flight? - Option 2
 Even in case a flight features a start or end 'ground' entry, occasionally still 2 airports can be listed as options. The reason for this is that the algorithms need to find an airport for a flight start/end, and in some cases the airport reference point vs. one of its RWYs can be quite far apart (see EHAM example). To always be able to assign an airport, the algorithm searches within a 9km range. However for some airports such as KSEA, this can then add KRNT as 2nd airport option for a flight:
 
 <img width="2458" height="1003" alt="capture area reason vs potential issues" src="https://github.com/user-attachments/assets/ae7b916c-11c1-4c24-83c9-eb9eca855ec1" />
