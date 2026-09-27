@@ -126,7 +126,7 @@ Contact me for enhanced datasets featuring:
 - Ancillary data such as airline type (FSC, LCC, etc), alliance, etc
 - Airport analyses such as yearly traffic patterns (e.g. seasonality) and calculation of rolling hour traffic/pax/seats figures - Examples below:
 
-<img width="1556" height="785" alt="eham_yr_frequencies" src="https://github.com/user-attachments/assets/fba17a77-ab87-4e22-a79f-d5af5850402d" />
+<img width="1896" height="932" alt="EHAM yr 2025" src="https://github.com/user-attachments/assets/9d3eec8b-37f2-438e-9ab6-153c285b3e37" />
 <img width="1896" height="932" alt="ATM roll MAY" src="https://github.com/user-attachments/assets/a1b76828-6df1-4391-94b8-e1e35dffa760" />
 
 
