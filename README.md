@@ -185,5 +185,32 @@ In case of go-arounds/touch-and-go/baulked landings, only the final touchdown is
 ![image](https://github.com/user-attachments/assets/96de9c02-a204-4d1e-8198-3cb0069e93e2)
 
 
+# Details - Finetuning Filtered Flights
+Each quarterly file contains the flights grouped per aircraft (registration/icao hex code), including airline and airport data.
+
+You can hence filter for various types of analyses:
+- Flights per *AIRCRAFT*
+    - Columns: 'ICAO_Hex' or 'Reg'
+
+- Flights per *AIRLINE*
+    - Columns: 'Airline'
+
+- Flights per *AIRPORT*
+    - Columns: 'Track_Origin_ApplicableAirports', 'Track_Destination_ApplicableAirports', 'Route_Validation_Based_on_Callsign'
+
+
+When filtering flights for an airport, given (various) antenna coverage cases explained in the preceding paragraphs, some recommendations are in place:
+- After filtering for the airport's ICAO code (in aforementioned columns):
+
+- For airports with sufficient antenna coverage, check the track start/end flight level (FL) for finetuning using an appropriately low FL (ft) value:
+    - Columns: 'Track_Destination_FL_Ft' or 'Track_Origin_FL_Ft' (--> depending on arr/dep!)
+
+- Furthermore, check the track start/end lat/lon to calculate the distance towards the selected airport for finetuning using an appropriately low distance value:
+    - This can also be used to finetune in case of airports in close vicinity of each other (the case elaborated in a previous paragraph reg. Seattle Tacoma Airport (KSEA) vs. Renton Municipal Airport (KRNT), or e.g. Frankfurt am Main (EDDF) vs. Frankfurt Egelsbach (EDFE) to filter out some GA movements where tracks stopped in between both airports)
+    - Columns: 'Track_Destination_Lat', 'Track_Destination_Lon', 'Track_Origin_Lat', 'Track_Origin_Lon'
+
+- For airports with limited antenna coverage, it will be required to use higher FL and distance values, at the tradeoff of reduced accuracy
+
+
 # The Future
 The more ADS-B receivers are added to the [adsb.lol initiative](https://github.com/adsblol/feed) through [ADSB.im software](https://adsb.im/home), the more accurate the derived flight schedules in this repository also become (accuracy of airport of origin/destination and pertaining RWY times). Please consider adding a receiver to the respective website using the links directly above.
