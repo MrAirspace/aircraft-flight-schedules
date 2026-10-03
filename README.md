@@ -103,8 +103,8 @@ Recorded position transmissions for a day in March 2026. Clearly apparent the in
 <img width="1346" height="814" alt="Screenshot_20260302_180629" src="https://github.com/user-attachments/assets/61cacb93-69a8-411c-9654-098f84de2fb7" />
 
 
-# Data Enrichment - Against Limited Coverage in Certain Areas & GPS Spoofing
-Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents (1) or GPS spoofing (2), some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, the flights data has been enhanced by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
+# Data Enrichment - Against Limited Coverage in Certain Areas (1) & GPS Spoofing (2)
+Given potentially limited ADS-B reception coverage of the ADSBlol initiative in certain continents (1) or GPS spoofing (2), some aircraft tracks start after the airport of origin or end before the airport of destination. For those cases, further (validation) route data has been added to the flights by looking up the aircraft flight callsign and matching it with the open-source aircraft callsign vs route dataset of [vradarserver/Andrew Whewell](https://github.com/vradarserver/standing-data/tree/main/routes/schema-01).
 
 
 # License
