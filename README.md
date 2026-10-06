@@ -211,6 +211,8 @@ When filtering flights for an airport, given (various) antenna coverage cases ex
 
 - For airports with limited antenna coverage, it will be required to use higher FL and distance values, at the tradeoff of reduced accuracy
 
+- Finally, consider filtering out duplicate flights at the 'borders' of the yearly quarters (as explained in paragraphs above), and also potential duplicates as a result of incomplete ADS-B tracks (as explained in further paragraphs above). In the latter case, you can identify this by sorting flights per registration and checking it has a double arrival or departure flight when looking into the aircraft its movements at your selected airport, in chronological order.
+
 
 # The Future
 The more ADS-B receivers are added to the [adsb.lol initiative](https://github.com/adsblol/feed) through [ADSB.im software](https://adsb.im/home), the more accurate the derived flight schedules in this repository also become (accuracy of airport of origin/destination and pertaining RWY times). Please consider adding a receiver to the respective website using the links directly above.
