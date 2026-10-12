@@ -34,7 +34,9 @@ Furthermore, to check the parquet dataset without python, you can use tools like
 
 # The Flight Schedules - Which Column is What?
 Below an explanation of which column features which data:
-![columns_arr](https://github.com/user-attachments/assets/39cadb32-6b70-44f8-9e1f-ac1429b652aa)
+
+<img width="1751" height="344" alt="gen + departure data2" src="https://github.com/user-attachments/assets/c97a9034-34ad-4b5c-b667-08d0a5e1dada" />
+
 - 'ICAO_Hex' = the unique 24-bit hexadecimal address assigned to the aircraft transponder
 
 - 'Reg' = the registration (tail number) of the aircraft
@@ -43,7 +45,7 @@ Below an explanation of which column features which data:
 
 - AC_Type_Description' = the full aircraft type designator inlcuding manufacturer
 
-- AC_Type_Detailed' (NEW as of 2026 Q1!) = further aircraft type details (for commercial aircraft only), allows to differentiate pax, cargo and VIP aircraft types if the basic ICAO type code is the same (example: 'A332' possible in both cargo and pax variants, this column then further clarifies 'A330 243F' or 'A330 203')
+- AC_Type_Detailed' (_NEW as of 2026 Q1!_) = further aircraft type details (for commercial aircraft only), allows to differentiate pax, cargo and VIP aircraft types if the basic ICAO type code is the same (example: 'A332' possible in both cargo and pax variants, this column then further clarifies 'A330 243F' or 'A330 203')
 
 - 'Airline' = the airline ICAO code, as derived from the callsign
 
@@ -60,7 +62,8 @@ Below an explanation of which column features which data:
 - 'Track_Origin_ApplicableAirports' = airport(s) in the vicinity of the starting point of the track of a flight - airport ICAO code (further details and possible cases in sections below)
 
 
-![columns_dep_and_route_validation](https://github.com/user-attachments/assets/cbf99be4-4de1-4a4e-af64-994656273e16)
+<img width="1742" height="375" alt="gen + arrival data2" src="https://github.com/user-attachments/assets/a6664624-d6c8-43ca-b259-63db60c6eb56" />
+
 - 'Track_Destination_Lat' = endpoint of the track of a flight (further definition in sections below) - latitude in decimal format
 
 - 'Track_Destination_Lon' = endpoint of the track of a flight (further definition in sections below) - longitude in decimal format
